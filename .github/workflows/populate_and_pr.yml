@@ -3,7 +3,8 @@ name: Update snode cache
 on:
     workflow_dispatch: # Manual trigger
     schedule:
-        - cron: "0 0 * * 0" # Weekly on Sunday (optional)
+        - cron: "10 0 * * *" # Daily at 10:00 UTC
+
 permissions:
     contents: write
     pull-requests: write
